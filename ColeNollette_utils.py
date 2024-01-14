@@ -1,16 +1,5 @@
 """ This module provides a reusable byline for the author's services. """
 
-#Byline string
-
-byline: str = f"""
-{company_name}
-{active_projects_string}
-{international_prescence_string}
-{client_satisfaction_string}
-{services_offered}
-{satisfaction_score}
-"""
-
 #Imports
 
 import math
@@ -43,6 +32,18 @@ mode = statistics.mode(satisfaction_score)
 median = statistics.median(satisfaction_score)
 standard_deviation = statistics.stdev(satisfaction_score)
 
+#Byline string
+
+byline: str = f"""
+{company_name}
+{active_projects_string}
+{international_prescence_string}
+{client_satisfaction_string}
+{services_offered}
+{satisfaction_score}
+"""
+
+
 def main():
     ''' Display all output'''
 print(company_name)
@@ -61,6 +62,3 @@ print (mean)
 print (median)
 print (mode)
 print (standard_deviation)
-
-if __name__ == '__main__':
-    main()
